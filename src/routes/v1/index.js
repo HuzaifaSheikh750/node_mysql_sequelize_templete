@@ -1,9 +1,10 @@
 const express = require('express');
 
-const { InfoController } = require('../../controllers');
+const { CityController } = require('../../controllers');
 
 const router = express.Router();
 
-router.get('/info', InfoController.info);
+router.post('/cities', CityController.create);
+// router.get('/cities', CityController.getCities);
 
 module.exports = router;
